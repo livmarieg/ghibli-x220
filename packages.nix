@@ -24,8 +24,7 @@
     khal
     khard
     #mpvc
-    ranger
-    redshift
+    #ranger
     zathura
     
     ## Networking
@@ -41,6 +40,11 @@
 
     ### Instant-Messengers
     #profanity
+    #quaternion
+    #riot-web
+    #signal-desktop
+    #tdesktop
+    #telegram-cli
     
     ### IRC
     #weechat
@@ -132,12 +136,17 @@
     unzip
     zip
 
+    ## Bluetooth
+    #blueman
+    #bluez
+
     ## Graphics
     pywal
     scrot    # OR escrotum OR maim OR yaxg
 
     ## Misc
     neofetch
+    #screen
     tmpwatch
     tmux
     vdirsyncer # for khal and khard

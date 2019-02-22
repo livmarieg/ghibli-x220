@@ -5,6 +5,15 @@
     openssh.enable = true;
     printing.enable = true;
     fprintd.enable = true;
+    redshift = {
+      enable = true;
+      latitude = "38.6";
+      longitude = "90.5";
+      temperature = {
+        day = 5500;
+        night = 3500;
+      };
+    };
     xserver = {
       enable = true;
       layout = "us";
