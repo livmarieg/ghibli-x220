@@ -13,6 +13,10 @@
         day = 5500;
         night = 3500;
       };
+      brightness = {
+        day = "1";
+        night = "1";
+      };
     };
     xserver = {
       enable = true;
