@@ -35,6 +35,12 @@
         xmonad = {
           enable = true;
           enableContribAndExtras = true;
+          extraPackages = haskellPackages: [
+            haskellPackages.xmonad-contrib
+            haskellPackages.xmonad-extras
+            haskellPackages.xmonad
+            haskellPackages.monad-logger
+          ];
         };
         default = "i3";
       };
