@@ -76,6 +76,7 @@
     #gcc
 
     ## Trivial-Builder
+    idris
     #libreoffice
     texlive.combined.scheme-full
     #vimPlugins.pluginnames2nix  # use this in the future
@@ -92,7 +93,6 @@
     #haskellPackages.djinn
     haskellPackages.ghcid
     haskellPackages.hnix
-    haskellPackages.idris
     haskellPackages.pandoc
     #haskellPackages.purescript
     haskellPackages.stack
