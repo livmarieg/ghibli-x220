@@ -15,6 +15,11 @@
           "libvirtd"
         ];
         shell = pkgs.zsh;
+        packages = with pkgs; [
+          # Tools
+          ## Package-Management
+          home-manager
+        ];
       };
     };
     defaultUserShell = "/run/current-system/sw/bin/zsh";

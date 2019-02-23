@@ -158,9 +158,6 @@
     #traceroute
     #wget
     #whois
-
-    ## Package-Management
-    home-manager
     
     ## Security
     #clamav
