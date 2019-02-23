@@ -7,6 +7,8 @@
     ./network.nix
     ./packages.nix
     ./services.nix
+    ./users.nix
+    "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
   ];
 
   i18n = {
@@ -42,25 +44,6 @@
       enable = true;
       volumeStep = "1";
     };
-  };
-
-  users = {
-    extraUsers = {
-      cvoges12 = {
-        description = "Clayton Voges";
-        createHome = true;
-        home = "/home/cvoges12";
-        isNormalUser = true;
-        uid = 1000;
-        extraGroups = [
-          "wheel" "disk" "audio" "video"
-          "networkmanager" "systemd-journal"
-          "libvirtd"
-        ];
-        shell = pkgs.zsh;
-      };
-    };
-    defaultUserShell = "/run/current-system/sw/bin/zsh";
   };
 
   system.stateVersion = "18.09";
