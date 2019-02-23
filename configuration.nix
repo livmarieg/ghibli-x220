@@ -8,7 +8,6 @@
     ./packages.nix
     ./services.nix
     ./users.nix
-    "${builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz}/nixos"
   ];
 
   i18n = {

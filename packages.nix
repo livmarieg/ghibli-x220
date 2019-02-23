@@ -158,12 +158,15 @@
     #traceroute
     #wget
     #whois
+
+    ## Package-Management
+    home-manager
     
     ## Security
     #clamav
     gnupg
     #john
-    #kpcli
+    kpcli
     #metasploit
     #nmap
     #thc-hydra
@@ -178,7 +181,6 @@
 
     # ../libs
     ## attrsets
-    biber
     perl528Packages.WWWYoutubeViewer
   ];
 
