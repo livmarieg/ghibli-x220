@@ -10,8 +10,8 @@
       latitude = "38.6";
       longitude = "90.5";
       temperature = {
-        day = 5500;
-        night = 3500;
+        day = 3500;
+        night = 5500;
       };
       brightness = {
         day = "1";
