@@ -26,6 +26,20 @@
         enable = true;
         tapping = false;
       };
+      #xrandrHeads = [
+      #  { output = "LVDS1";
+      #    primary = true;
+      #    monitorConfig = ''
+      #      DisplaySize 1366 768
+      #    '';
+      #  }
+      #  { output = "VGA1";
+      #    primary = false;
+      #    monitorConfig = ''
+      #      DisplaySize 1920 1080
+      #    '';
+      #  }
+      #];
       synaptics.enable = false;
       windowManager = {
         i3 = {

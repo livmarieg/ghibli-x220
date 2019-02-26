@@ -172,6 +172,9 @@
     htop
     tree
 
+    # X11
+    arandr
+
     # Top-level
     ## Python-packages
     python36Packages.glances
