@@ -14,7 +14,8 @@
     #ncmpcpp
 
     ## Editors
-    (import ./vim.nix)
+    vim
+    (import ./nvim.nix)
 
     ## Graphics
     feh
@@ -84,6 +85,8 @@
     # Development
     ## Compilers
     ghc
+    #haskell.packages.ghc822.ghc
+    #haskell.packages.ghc822
     #llvm
     openjdk
 
