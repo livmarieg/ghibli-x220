@@ -85,8 +85,8 @@
     # Development
     ## Compilers
     ghc
-    #haskell.packages.ghc822.ghc
-    #haskell.packages.ghc822
+    #haskell.packages.ghc822.ghc    # collision. create devenv? or find way to compile djinn
+    #haskell.packages.ghc822    # not a package
     #llvm
     openjdk
 

@@ -1,0 +1,187 @@
+building Nix...
+building the system configuration...
+these derivations will be built:
+  /nix/store/dqsly1xgmvsnpm70h2f2d8k5js9gsj3n-remove-references-to.drv
+  /nix/store/0d49wgba73ay56s2zy3jp5pw2q8lg5xw-djinn-2014.9.7.drv
+  /nix/store/i5anv7pj5i0q49zx68rnbvbxizspiqlk-system-path.drv
+  /nix/store/ss1zg965v09ncyhxvb6147jgwig79nih-dbus-catalog.xml.drv
+  /nix/store/h8y3hs1c5gz4akrhiac6xz90nn38cdpi-dbus-1.drv
+  /nix/store/rp3d395nld3f31shxyxw2rayanb8dxfh-unit-dbus.service.drv
+  /nix/store/46xqd7rk3axsjjz2hlwxbaipzpwrri6d-user-units.drv
+  /nix/store/4k2hxpkamnc0n1wjlq36swxzj8kj7mf5-unit-systemd-rfkill.socket-disabled.drv
+  /nix/store/96wcvr5v55m0iqay6xn7k3ff4p4i4h7p-system-crontab.drv
+  /nix/store/d2h7j9b5z7qrf57ppi1x8n40xjvcb90y-crontabs.drv
+  /nix/store/78kdfp7a8b1p3hxr4j9l0p8lp9d3h3z0-unit-console-getty.service-disabled.drv
+  /nix/store/7g0mrhll1p1fj692sgjbbva88h6i0glq-unit-polkit.service.drv
+  /nix/store/aawals91an4h87qzc77y4vl8rs37ar94-unit-accounts-daemon.service.drv
+  /nix/store/jgbwjvjnk634afx14ifswr1sh79zkbwa-unit-dbus.service.drv
+  /nix/store/kbp38lwjnxf3z06w2ybsj4y2jc87z60m-unit-systemd-rfkill.service-disabled.drv
+  /nix/store/qcvaqz5jsaz688c568r552y0gxzva6xq-unit-systemd-fsck-.service.drv
+  /nix/store/ph50jmlb6grxrn5lf29ywkpvbxw0iq9w-system-units.drv
+  /nix/store/b25j18r7wmfj0dfv58a9z5jiqwh3nfbr-etc.drv
+  /nix/store/mymliq63svbwjwk7dkkpgld2mr834fm1-stage-2-init.sh.drv
+  /nix/store/5nx6gzdk2v743w2gk5rzan527z775m0q-nixos-system-annet-x220-18.09.2253.753f58d9a42.drv
+these paths will be fetched (1.45 MiB download, 10.79 MiB unpacked):
+  /nix/store/53364m7bynchdgn38zhp6idjny3gnk4w-desktop-file-utils-0.23
+  /nix/store/6z7g4r2cr613vqdbz2h9mx25hqi2kq9x-lndir-1.0.3
+  /nix/store/8m2ld502dsx6rbsvv05597qzxha4cnc1-gnumake-4.2.1
+  /nix/store/a2r3mx450ndsqiky685qp8d0ljsw0bx8-paxctl-0.9
+  /nix/store/a6rf8a474z5y01w4ld2v54d24kyqcxag-stdenv-linux
+  /nix/store/dxff5wg6di0qc3v9sh7v4ssm02srs98z-djinn-2014.9.7.tar.gz
+  /nix/store/lf7z552qg6rihc23z0ir9wxp6rbpvciv-libxslt-1.1.32-bin
+  /nix/store/ps577kng0c652r6c4xks9jv5mksdxgyp-patchelf-0.9
+  /nix/store/r23mm8zrxfr066cml8d99n4lw3whi4nm-stdenv-linux
+  /nix/store/xbxabhr44naykgf768533sijfcamkyr9-texinfo-6.5
+copying path '/nix/store/8m2ld502dsx6rbsvv05597qzxha4cnc1-gnumake-4.2.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/ps577kng0c652r6c4xks9jv5mksdxgyp-patchelf-0.9' from 'https://cache.nixos.org'...
+copying path '/nix/store/a2r3mx450ndsqiky685qp8d0ljsw0bx8-paxctl-0.9' from 'https://cache.nixos.org'...
+copying path '/nix/store/6z7g4r2cr613vqdbz2h9mx25hqi2kq9x-lndir-1.0.3' from 'https://cache.nixos.org'...
+copying path '/nix/store/53364m7bynchdgn38zhp6idjny3gnk4w-desktop-file-utils-0.23' from 'https://cache.nixos.org'...
+copying path '/nix/store/dxff5wg6di0qc3v9sh7v4ssm02srs98z-djinn-2014.9.7.tar.gz' from 'https://cache.nixos.org'...
+copying path '/nix/store/lf7z552qg6rihc23z0ir9wxp6rbpvciv-libxslt-1.1.32-bin' from 'https://cache.nixos.org'...
+copying path '/nix/store/xbxabhr44naykgf768533sijfcamkyr9-texinfo-6.5' from 'https://cache.nixos.org'...
+copying path '/nix/store/a6rf8a474z5y01w4ld2v54d24kyqcxag-stdenv-linux' from 'https://cache.nixos.org'...
+copying path '/nix/store/r23mm8zrxfr066cml8d99n4lw3whi4nm-stdenv-linux' from 'https://cache.nixos.org'...
+building '/nix/store/ss1zg965v09ncyhxvb6147jgwig79nih-dbus-catalog.xml.drv'...
+building '/nix/store/dqsly1xgmvsnpm70h2f2d8k5js9gsj3n-remove-references-to.drv'...
+building '/nix/store/mymliq63svbwjwk7dkkpgld2mr834fm1-stage-2-init.sh.drv'...
+building '/nix/store/78kdfp7a8b1p3hxr4j9l0p8lp9d3h3z0-unit-console-getty.service-disabled.drv'...
+building '/nix/store/kbp38lwjnxf3z06w2ybsj4y2jc87z60m-unit-systemd-rfkill.service-disabled.drv'...
+building '/nix/store/4k2hxpkamnc0n1wjlq36swxzj8kj7mf5-unit-systemd-rfkill.socket-disabled.drv'...
+building '/nix/store/0d49wgba73ay56s2zy3jp5pw2q8lg5xw-djinn-2014.9.7.drv'...
+setupCompilerEnvironmentPhase
+Build with /nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4.
+unpacking sources
+unpacking source archive /nix/store/dxff5wg6di0qc3v9sh7v4ssm02srs98z-djinn-2014.9.7.tar.gz
+source root is djinn-2014.9.7
+setting SOURCE_DATE_EPOCH to timestamp 1410104463 of file djinn-2014.9.7/src/REPL.hs
+patching sources
+compileBuildDriverPhase
+setupCompileFlags: -package-db=/build/setup-package.conf.d -j1 -threaded
+[1 of 1] Compiling Main             ( Setup.lhs, /build/Main.o )
+Linking Setup ...
+configuring
+configureFlags: --verbose --prefix=/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7 --libdir=$prefix/lib/$compiler --libsubdir=$abi/$libname --docdir=/nix/store/g5zi3wqkwyz6whq6lf9x2hm1i74w9124-djinn-2014.9.7-doc/share/doc/djinn-2014.9.7 --with-gcc=gcc --package-db=/build/package.conf.d --ghc-option=-j1 --disable-split-objs --enable-library-profiling --profiling-detail=exported-functions --disable-profiling --enable-shared --disable-coverage --enable-static --disable-executable-dynamic --enable-tests --enable-library-vanilla --enable-library-for-ghci --ghc-option=-split-sections --extra-lib-dirs=/nix/store/zayl6yjayksyha5ndhxm6lmhr51i8sj6-ncurses-6.1-20190112/lib --extra-lib-dirs=/nix/store/cxiayilwj3ccnswhqmw00bhnnd0zfrcb-gmp-6.1.2/lib
+Using Parsec parser
+Configuring djinn-2014.9.7...
+Dependency array -any: using array-0.5.2.0
+Dependency base >=4 && <6: using base-4.11.1.0
+Dependency containers -any: using containers-0.5.11.0
+Dependency haskeline -any: using haskeline-0.7.4.2
+Dependency mtl -any: using mtl-2.2.2
+Dependency pretty -any: using pretty-1.1.3.6
+Source component graph: component exe:djinn
+Configured component graph:
+    component djinn-2014.9.7-L90nwcChbj3HfJtuKdJrFv-djinn
+        include base-4.11.1.0
+        include mtl-2.2.2
+        include haskeline-0.7.4.2
+        include pretty-1.1.3.6
+        include array-0.5.2.0
+        include containers-0.5.11.0
+Linked component graph:
+    unit djinn-2014.9.7-L90nwcChbj3HfJtuKdJrFv-djinn
+        include base-4.11.1.0
+        include mtl-2.2.2
+        include haskeline-0.7.4.2
+        include pretty-1.1.3.6
+        include array-0.5.2.0
+        include containers-0.5.11.0
+Ready component graph:
+    definite djinn-2014.9.7-L90nwcChbj3HfJtuKdJrFv-djinn
+        depends base-4.11.1.0
+        depends mtl-2.2.2
+        depends haskeline-0.7.4.2
+        depends pretty-1.1.3.6
+        depends array-0.5.2.0
+        depends containers-0.5.11.0
+Using Cabal-2.2.0.1 compiled by ghc-8.4
+Using compiler: ghc-8.4.4
+Using install prefix:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7
+Executables installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/bin
+Libraries installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/lib/ghc-8.4.4/x86_64-linux-ghc-8.4.4/djinn-2014.9.7
+Dynamic Libraries installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/lib/ghc-8.4.4/x86_64-linux-ghc-8.4.4
+Private executables installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/libexec/x86_64-linux-ghc-8.4.4/djinn-2014.9.7
+Data files installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/share/x86_64-linux-ghc-8.4.4/djinn-2014.9.7
+Documentation installed in:
+/nix/store/g5zi3wqkwyz6whq6lf9x2hm1i74w9124-djinn-2014.9.7-doc/share/doc/djinn-2014.9.7
+Configuration files installed in:
+/nix/store/acmyf96gm483wdwp5za5n8wsyc8vz533-djinn-2014.9.7/etc
+No alex found
+Using ar found on system at:
+/nix/store/5vyv136pqs75pj0b8vcpdyc03dmn9p0n-binutils-2.30/bin/ar
+No c2hs found
+No cpphs found
+No doctest found
+Using gcc version 7.3.0 given by user at:
+/nix/store/cy3x06bfplivhrvx6rf7vkszx81c09nn-gcc-wrapper-7.3.0/bin/gcc
+Using ghc version 8.4.4 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/ghc
+Using ghc-pkg version 8.4.4 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.20.0 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/hpc
+Using hsc2hs version 0.68.3 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/hsc2hs
+No hscolour found
+No jhc found
+Using ld found on system at:
+/nix/store/5c5vbvcybxllw3jdwzm1s0gx7j1464rc-binutils-wrapper-2.30/bin/ld
+No lhc found
+No lhc-pkg found
+No pkg-config found
+Using runghc version 8.4.4 found on system at:
+/nix/store/6z9dyzgrzrkzdxnjl99aw9zz9bbfcx63-ghc-8.4.4/bin/runghc
+Using strip version 2.30 found on system at:
+/nix/store/5vyv136pqs75pj0b8vcpdyc03dmn9p0n-binutils-2.30/bin/strip
+Using tar found on system at:
+/nix/store/n9w6xkk15nkpslvzhwrpi90pv3kkdal6-gnutar-1.30/bin/tar
+No uhc found
+building
+Preprocessing executable 'djinn' for djinn-2014.9.7..
+Building executable 'djinn' for djinn-2014.9.7..
+[1 of 7] Compiling Help             ( src/Help.hs, dist/build/djinn/djinn-tmp/Help.o )
+[2 of 7] Compiling LJTFormula       ( src/LJTFormula.hs, dist/build/djinn/djinn-tmp/LJTFormula.o )
+[3 of 7] Compiling LJT              ( src/LJT.hs, dist/build/djinn/djinn-tmp/LJT.o )
+[4 of 7] Compiling HTypes           ( src/HTypes.hs, dist/build/djinn/djinn-tmp/HTypes.o )
+
+src/HTypes.hs:221:29: error:
+    Ambiguous occurrence ‘<>’
+    It could refer to either ‘Prelude.<>’,
+                             imported from ‘Prelude’ at src/HTypes.hs:6:8-13
+                             (and originally defined in ‘GHC.Base’)
+                          or ‘Text.PrettyPrint.HughesPJ.<>’,
+                             imported from ‘Text.PrettyPrint.HughesPJ’ at src/HTypes.hs:10:65-68
+    |
+221 | ppPat _ (HPAt s p) = text s <> text "@" <> ppPat 10 p
+    |                             ^^
+
+src/HTypes.hs:221:41: error:
+    Ambiguous occurrence ‘<>’
+    It could refer to either ‘Prelude.<>’,
+                             imported from ‘Prelude’ at src/HTypes.hs:6:8-13
+                             (and originally defined in ‘GHC.Base’)
+                          or ‘Text.PrettyPrint.HughesPJ.<>’,
+                             imported from ‘Text.PrettyPrint.HughesPJ’ at src/HTypes.hs:10:65-68
+    |
+221 | ppPat _ (HPAt s p) = text s <> text "@" <> ppPat 10 p
+    |                                         ^^
+builder for '/nix/store/0d49wgba73ay56s2zy3jp5pw2q8lg5xw-djinn-2014.9.7.drv' failed with exit code 1
+cannot build derivation '/nix/store/i5anv7pj5i0q49zx68rnbvbxizspiqlk-system-path.drv': 1 dependencies couldn't be built
+cannot build derivation '/nix/store/5nx6gzdk2v743w2gk5rzan527z775m0q-nixos-system-annet-x220-18.09.2253.753f58d9a42.drv': 1 dependencies couldn't be built
+error: build of '/nix/store/5nx6gzdk2v743w2gk5rzan527z775m0q-nixos-system-annet-x220-18.09.2253.753f58d9a42.drv' failed
