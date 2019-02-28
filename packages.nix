@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  # $ nix-env -qaP | grep
   environment.systemPackages = with pkgs; [
   
     # Applications
