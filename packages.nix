@@ -92,7 +92,7 @@
     ## Haskell-Modules
     ### Hackage-Packages
     haskellPackages.Chart
-    #haskellPackages.djinn
+    haskell.packages.ghc822.djinn
     haskellPackages.ghcid
     haskellPackages.hnix
     haskellPackages.pandoc
