@@ -158,6 +158,7 @@
     #aircrack-ng
     #offlineimap
     #traceroute
+    wireguard-tools
     #wget
     #whois
     
