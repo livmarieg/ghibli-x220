@@ -25,6 +25,7 @@
     khard
     #mpvc
     #ranger
+    termite
     zathura
     
     ## Networking

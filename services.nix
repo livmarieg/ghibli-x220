@@ -27,6 +27,7 @@
         tapping = false;
       };
       synaptics.enable = false;
+
       windowManager = {
         i3 = {
           enable = true;
@@ -44,6 +45,7 @@
         };
         default = "i3";
       };
+      desktopManager.xterm.enable = false;
     };
     cron = {
       enable = true;

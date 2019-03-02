@@ -10,9 +10,15 @@
     ./users.nix
   ];
 
+  documentation = {
+    enable = true;
+    dev.enable = true;
+    doc.enable = true;
+    info.enable = true;
+    man.enable = true;
+  };
   i18n = {
     consoleFont = "Lat2-Terminus16";
-    #consoleKeyMap = "us";
     consoleUseXkbConfig = true;
     defaultLocale = "en_US.UTF-8";
   };
@@ -23,6 +29,11 @@
     enableFontDir = true;
     enableGhostscriptFonts = true;
     fontconfig = {
+      enable = true;
+      allowBitmaps = true;
+      antialias = true;
+      hinting.enable = true;
+      includeUserConf = true;
       defaultFonts = {
         monospace = ["Fira Mono"];
         sansSerif = ["Fira Sans"];
