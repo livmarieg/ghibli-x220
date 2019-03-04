@@ -132,9 +132,6 @@
     #mpd
     #quagga
 
-    # Shells
-    zsh
-
     # Tools
     ## Archivers
     unrar
@@ -195,6 +192,11 @@
       enableSSHSupport = true;
     };
     tmux.enable = true;
-    zsh.enable = true;
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      enableGlobalCompInit = true;
+      autosuggestions.enable = true;
+    };
   };
 }

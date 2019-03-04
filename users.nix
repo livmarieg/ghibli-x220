@@ -16,9 +16,6 @@
         ];
         shell = pkgs.zsh;
         packages = with pkgs; [
-          # Tools
-          ## Package-Management
-          home-manager
         ];
       };
     };
