@@ -2,6 +2,10 @@
 
 {
   services = {
+    #actkbd.enable = true;
+    #apache-kafka.enable = true;
+    #apcupsd.enable = true;
+    #arbtt.enable = true;
     openssh.enable = true;
     printing.enable = true;
     fprintd.enable = true;
