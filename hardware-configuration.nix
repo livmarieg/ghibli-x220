@@ -15,11 +15,9 @@
       checkJournalingFS = true;
       luks = {
         devices = [
-          {
-            name = "root";
+          { name = "root";
             device = "/dev/disk/by-uuid/39dbf466-ebe0-47b9-ac66-9a1dd1cb72bf";
-            preLVM = true;
-          }
+            preLVM = true;}
         ];
         mitigateDMAAttacks = true;
         reusePassphrases = true;
@@ -47,16 +45,21 @@
     fsType = "vfat";
   };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/62710d48-c6b4-465c-9a43-210a22f1bc60"; }
-    ];
+  swapDevices = [
+    { device = "/dev/disk/by-uuid/62710d48-c6b4-465c-9a43-210a22f1bc60"; }
+  ];
 
   nix.maxJobs = lib.mkDefault 4; # change to number of total cores; lscpu
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+  powerManagement = {
+    enable = true;
+    cpuFreqGovernor = lib.mkDefault "powersave";
+    powertop.enable = true;
+  };
   hardware = {
-    pulseaudio = {
-      enable = true;
-      support32Bit = true;
+    bluetooth = {
+      enable = false;
+      #package = pkgs.blue;
+      powerOnBoot = false;
     };
     opengl = {
       driSupport = true;
@@ -64,6 +67,9 @@
       s3tcSupport = true;
       enable = true;
     };
-    bluetooth.enable = false;
+    pulseaudio = {
+      enable = true;
+      support32Bit = true;
+    };
   };
 }

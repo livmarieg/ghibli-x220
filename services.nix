@@ -51,7 +51,6 @@
       enable = true;
       systemCronJobs = [
         "0 0 1 * *     root     tmpwatch -maf 240 /tmp"
-        "30 3 * * *    root     nix-store --optimize"
       ];
     };
     udev.packages = with pkgs; [
@@ -61,7 +60,17 @@
     upower.enable = true;
   };
   nix = {
-    gc.automatic = true;
-    gc.dates = "3:00";
+    checkConfig = true;
+    gc = {
+      automatic = true;
+      dates = "3:00";
+    };
+    optimise = {
+      automatic = true;
+      dates = [ "3:30" ];
+    };
+    readOnlyStore = true;
+    requireSignedBinaryCaches = true;
+    useSandbox = true;
   };
 }

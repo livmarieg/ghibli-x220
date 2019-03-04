@@ -25,6 +25,8 @@
     khard
     #mpvc
     #ranger
+    rxvt_unicode
+    taskwarrior
     termite
     zathura
     
@@ -139,10 +141,6 @@
     unzip
     zip
 
-    ## Bluetooth
-    #blueman
-    #bluez
-
     ## Graphics
     pywal
     scrot    # OR escrotum OR maim OR yaxg
@@ -182,10 +180,6 @@
     # Top-level
     ## Python-packages
     python36Packages.glances
-
-    # ../libs
-    ## attrsets
-    perl528Packages.WWWYoutubeViewer
   ];
 
   nixpkgs.config = {

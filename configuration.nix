@@ -17,6 +17,7 @@
     info.enable = true;
     man.enable = true;
   };
+
   i18n = {
     consoleFont = "Lat2-Terminus16";
     consoleUseXkbConfig = true;
@@ -34,6 +35,7 @@
       antialias = true;
       hinting.enable = true;
       includeUserConf = true;
+      penultimate.enable = true;
       defaultFonts = {
         monospace = ["Fira Mono"];
         sansSerif = ["Fira Sans"];
