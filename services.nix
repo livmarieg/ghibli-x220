@@ -6,7 +6,10 @@
     #apache-kafka.enable = true;
     #apcupsd.enable = true;
     #arbtt.enable = true;
-    openssh.enable = true;
+    openssh = {
+      enable = true;
+      allowSFTP = true;
+    };
     printing.enable = true;
     fprintd.enable = true;
     #firefox.syncserver.enable = true;
@@ -23,6 +26,9 @@
     #i2pd.enable = true;
     #ipfs.enable = true;
     #opensmtpd.enable = true;
+    #pipewire.enable = true;
+    #plex.enable = true;
+    #prometheus.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
