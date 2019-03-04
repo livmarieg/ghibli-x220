@@ -60,6 +60,13 @@
     };
   };
   
+  xdg = {
+    autostart.enable = true;
+    icons.enable = true;
+    menus.enable = true;
+    mime.enable = true;
+  };
+  
   systemd.enableEmergencyMode = true;
 
   system.stateVersion = "18.09";
