@@ -16,6 +16,13 @@
     #glusterfs.enable = true;
     #graphana.enable = true;
     #graylog.enable = true;
+    #haka.enable = true;
+    #haproxy.enable = true;
+    #home-assistant.enable = true;
+    #hostapd.enable = true;
+    #i2pd.enable = true;
+    #ipfs.enable = true;
+    #opensmtpd.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
