@@ -59,6 +59,8 @@
       volumeStep = "1";
     };
   };
+  
+  systemd.enableEmergencyMode = true;
 
   system.stateVersion = "18.09";
 }
