@@ -11,6 +11,9 @@
     fprintd.enable = true;
     #firefox.syncserver.enable = true;
     #flexget.enable = true;
+    #gitea.enable = true;
+    #gitlab.enable = true;
+    #glusterfs.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
