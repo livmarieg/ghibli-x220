@@ -9,6 +9,7 @@
     openssh.enable = true;
     printing.enable = true;
     fprintd.enable = true;
+    #firefox.syncserver.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
