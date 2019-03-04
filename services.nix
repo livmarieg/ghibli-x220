@@ -29,6 +29,7 @@
     #pipewire.enable = true;
     #plex.enable = true;
     #prometheus.enable = true;
+    #taskserver.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
