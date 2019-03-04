@@ -30,6 +30,7 @@
     #plex.enable = true;
     #prometheus.enable = true;
     #taskserver.enable = true;
+    #unifi.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
@@ -45,6 +46,7 @@
     };
     xserver = {
       enable = true;
+      autorun = true;
       layout = "us";
       xkbVariant = "colemak";
       libinput = {
