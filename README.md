@@ -19,4 +19,7 @@ ToDo
 * rsync
 * install script
 * xmonad
-* home-manager
+* ~~home-manager~~
+* vim
+  - make each part into a plugin
+  - rewrite plugins in haskell
