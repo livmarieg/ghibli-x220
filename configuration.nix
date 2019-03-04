@@ -3,10 +3,13 @@
 { 
   imports = [ 
     <nixos-hardware/lenovo/thinkpad/x220>
-    ./hardware-configuration.nix 
-    ./network.nix
+    ./env.nix
+    ./hw.nix 
+    ./home.nix
+    ./net.nix
+    ./nixpkgs.nix
+    ./programs.nix
     ./security.nix
-    ./packages.nix
     ./services.nix
     ./users.nix
     (import (builtins.fetchTarball https://github.com/rycee/home-manager/archive/master.tar.gz) {}).nixos

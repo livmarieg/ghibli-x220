@@ -1,10 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ 
-    <nixpkgs/nixos/modules/installer/scan/not-detected.nix>
-  ];
-
   boot = { 
     enableContainers = true;
     hardwareScan = true;
@@ -56,6 +52,7 @@
     powertop.enable = true;
   };
   hardware = {
+    enableRedistributableFirmware = true;
     bluetooth = {
       enable = false;
       #package = pkgs.blue;
