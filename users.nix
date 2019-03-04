@@ -21,5 +21,6 @@
     };
     defaultUserShell = pkgs.zsh;
     enforceIdUniqueness = true;
+    mutableUsers = true;
   };
 }
