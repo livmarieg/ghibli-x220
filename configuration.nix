@@ -69,5 +69,11 @@
   
   systemd.enableEmergencyMode = true;
 
-  system.stateVersion = "18.09";
+  system = {
+    stateVersion = "18.09";
+    autoUpgrade = {
+      enable = true;
+      channel = "https://nixos.org/channels/nixos-18.09/";
+    };
+  };
 }
