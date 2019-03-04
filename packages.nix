@@ -192,7 +192,10 @@
       enable = true;
       enableSSHSupport = true;
     };
-    tmux.enable = true;
+    tmux = {
+      enable = true;
+      secureSocket = true;
+    };
     zsh = {
       enable = true;
       enableCompletion = true;
