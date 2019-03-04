@@ -200,7 +200,7 @@
       enableCompletion = true;
       enableGlobalCompInit = true;
       autosuggestions.enable = true;
-      onMyZsh = {
+      ohMyZsh = {
         enable = true;
       };
       syntaxHighlighting.enable = true;
