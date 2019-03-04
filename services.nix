@@ -10,6 +10,7 @@
     printing.enable = true;
     fprintd.enable = true;
     #firefox.syncserver.enable = true;
+    #flexget.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
