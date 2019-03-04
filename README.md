@@ -5,6 +5,7 @@ Annet x220
 Features
 --------
 * Network Automation
+* Security Automation
 * Service Automaton
 * User Automation
 * Hardware Automation

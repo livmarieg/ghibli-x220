@@ -5,6 +5,7 @@
     <nixos-hardware/lenovo/thinkpad/x220>
     ./hardware-configuration.nix 
     ./network.nix
+    ./security.nix
     ./packages.nix
     ./services.nix
     ./users.nix
