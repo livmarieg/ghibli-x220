@@ -146,7 +146,6 @@
     neofetch
     #screen
     tmpwatch
-    tmux
     vdirsyncer # for khal and khard
     #youtube-dl
 
