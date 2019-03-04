@@ -14,6 +14,7 @@
     #gitea.enable = true;
     #gitlab.enable = true;
     #glusterfs.enable = true;
+    #graphana.enable = true;
     redshift = {
       enable = true;
       latitude = "38.6";
