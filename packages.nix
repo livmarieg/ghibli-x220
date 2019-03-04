@@ -200,6 +200,10 @@
       enableCompletion = true;
       enableGlobalCompInit = true;
       autosuggestions.enable = true;
+      onMyZsh = {
+        enable = true;
+      };
+      syntaxHighlighting.enable = true;
     };
   };
 }
