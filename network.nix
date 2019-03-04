@@ -23,6 +23,7 @@
         scanRandMacAddress = true;
       };
     };
+    #useDHCP = true;
     usePredictableInterfaceNames = true;
     #wireguard.interfaces.wg0 = {
     #  allowIPsAsRoutes = true;
