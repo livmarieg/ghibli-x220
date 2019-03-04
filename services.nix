@@ -49,6 +49,8 @@
       autorun = true;
       layout = "us";
       xkbVariant = "colemak";
+      startDbusSession = true;
+      terminateOnReset = true;
       libinput = {
         enable = true;
         tapping = false;
