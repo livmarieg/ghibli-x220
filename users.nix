@@ -20,5 +20,6 @@
       };
     };
     defaultUserShell = pkgs.zsh;
+    enforceIdUniqueness = true;
   };
 }
