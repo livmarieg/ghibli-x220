@@ -1,179 +1,184 @@
 { config, lib, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-  
-    # Applications
-    ## Audio
-    #cava
-    #mopidy
-    #mopidy-gmusic
-    #mopidy-soundcloud
-    #mopidy-spotify
-    #ncmpcpp
-
-    ## Editors
-    vim
-    (import ./nvim.nix)
-
-    ## Graphics
-    feh
-
-    ## Misc
-    dmenu
-    khal
-    khard
-    #mpvc
-    #ranger
-    rxvt_unicode
-    termite
-    zathura
+  environment = {
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
+    systemPackages = with pkgs; [
     
-    ## Networking
-    ### Browsers
-    firefox
-    #w3m
+      # Applications
+      ## Audio
+      #cava
+      #mopidy
+      #mopidy-gmusic
+      #mopidy-soundcloud
+      #mopidy-spotify
+      #ncmpcpp
 
-    ### Feedreaders
-    #newsboat
+      ## Editors
+      vim
+      (import ./nvim.nix)
 
-    ### IDS
-    #snort
+      ## Graphics
+      feh
 
-    ### Instant-Messengers
-    #profanity
-    #quaternion
-    #riot-web
-    #signal-desktop
-    #tdesktop
-    #telegram-cli
-    
-    ### IRC
-    #weechat
+      ## Misc
+      dmenu
+      khal
+      khard
+      #mpvc
+      #ranger
+      rxvt_unicode
+      termite
+      zathura
+      
+      ## Networking
+      ### Browsers
+      firefox
+      #w3m
 
-    ### Mailreaders
-    #mailsync  # maybe checkout too?
-    #neomutt
-    #notmuch # maybe check out `notmuch-mutt`
-    
-    ### Sniffers
-    #wireshark
+      ### Feedreaders
+      #newsboat
 
-    ## Version-Management
-    ### Git-and-Tools
-    git
+      ### IDS
+      #snort
 
-    ## Video
-    #mpv
+      ### Instant-Messengers
+      #profanity
+      #quaternion
+      #riot-web
+      #signal-desktop
+      #tdesktop
+      #telegram-cli
+      
+      ### IRC
+      #weechat
 
-    ## Window-Manager
-    i3-gaps
-    i3blocks-gaps
-    i3lock
-    i3status
+      ### Mailreaders
+      #mailsync  # maybe checkout too?
+      #neomutt
+      #notmuch # maybe check out `notmuch-mutt`
+      
+      ### Sniffers
+      #wireshark
 
-    # Build-Support
-    ## CC-Wrapper
-    #clang
-    #gcc
+      ## Version-Management
+      ### Git-and-Tools
+      git
 
-    ## Trivial-Builder
-    idris
-    #libreoffice
-    texlive.combined.scheme-full
-    #vimPlugins.pluginnames2nix  # use this in the future
+      ## Video
+      #mpv
 
-    # Development
-    ## Compilers
-    ghc
-    #haskell.packages.ghc822.ghc    # collision. create devenv? or find way to compile djinn
-    #haskell.packages.ghc822    # not a package
-    #llvm
-    openjdk
+      ## Window-Manager
+      i3-gaps
+      i3blocks-gaps
+      i3lock
+      i3status
 
-    ## Haskell-Modules
-    ### Hackage-Packages
-    haskellPackages.Chart
-    haskell.packages.ghc822.djinn
-    haskellPackages.ghcid
-    haskellPackages.hnix
-    haskellPackages.pandoc
-    #haskellPackages.purescript
-    haskellPackages.stack
+      # Build-Support
+      ## CC-Wrapper
+      #clang
+      #gcc
 
-    ## Interpreters
-    #python37Full
+      ## Trivial-Builder
+      idris
+      #libreoffice
+      texlive.combined.scheme-full
+      #vimPlugins.pluginnames2nix  # use this in the future
 
-    ## Libraries
-    gnutls
-    libnotify
+      # Development
+      ## Compilers
+      ghc
+      #haskell.packages.ghc822.ghc    # collision. create devenv? or find way to compile djinn
+      #haskell.packages.ghc822    # not a package
+      #llvm
+      openjdk
 
-    ## Tools
-    ### Misc
-    dialog
+      ## Haskell-Modules
+      ### Hackage-Packages
+      haskellPackages.Chart
+      haskell.packages.ghc822.djinn
+      haskellPackages.ghcid
+      haskellPackages.hnix
+      haskellPackages.pandoc
+      #haskellPackages.purescript
+      haskellPackages.stack
 
-    ## Web
-    #nodejs
+      ## Interpreters
+      #python37Full
 
-    # Misc
-    ## Emulators
-    wine
+      ## Libraries
+      gnutls
+      libnotify
 
-    # OS-Specific
-    ## Linux
-    iotop
-    powertop
-    psmisc
-    #linuxPackages.wireguard
+      ## Tools
+      ### Misc
+      dialog
 
-    # Servers
-    #clamsmtp
-    #mpd
-    #quagga
+      ## Web
+      #nodejs
 
-    # Tools
-    ## Archivers
-    unrar
-    unzip
-    zip
+      # Misc
+      ## Emulators
+      wine
 
-    ## Graphics
-    pywal
-    scrot    # OR escrotum OR maim OR yaxg
+      # OS-Specific
+      ## Linux
+      iotop
+      powertop
+      psmisc
+      #linuxPackages.wireguard
 
-    ## Misc
-    neofetch
-    #screen
-    tmpwatch
-    vdirsyncer # for khal and khard
-    #youtube-dl
+      # Servers
+      #clamsmtp
+      #mpd
+      #quagga
 
-    ## Networking
-    #aircrack-ng
-    #offlineimap
-    #traceroute
-    wireguard-tools
-    #wget
-    #whois
-    
-    ## Security
-    #clamav
-    gnupg
-    #john
-    kpcli
-    #metasploit
-    #nmap
-    #thc-hydra
+      # Tools
+      ## Archivers
+      unrar
+      unzip
+      zip
 
-    ## System
-    htop
-    tree
+      ## Graphics
+      pywal
+      scrot    # OR escrotum OR maim OR yaxg
 
-    # X11
-    arandr
+      ## Misc
+      neofetch
+      #screen
+      tmpwatch
+      vdirsyncer # for khal and khard
+      #youtube-dl
 
-    # Top-level
-    ## Python-packages
-    python36Packages.glances
-  ];
+      ## Networking
+      #aircrack-ng
+      #offlineimap
+      #traceroute
+      wireguard-tools
+      #wget
+      #whois
+      
+      ## Security
+      #clamav
+      gnupg
+      #john
+      kpcli
+      #metasploit
+      #nmap
+      #thc-hydra
+
+      ## System
+      htop
+      tree
+
+      # X11
+      arandr
+
+      # Top-level
+      ## Python-packages
+      python36Packages.glances
+    ];
+  };
 }

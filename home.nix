@@ -12,6 +12,9 @@ in
 
 {
   home-manager.users.cvoges12 = {
+    home.sessionVariables = {
+      EDITOR = "nvim";
+    };
     programs = {
       git = {
         enable = true;
