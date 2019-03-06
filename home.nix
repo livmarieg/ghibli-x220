@@ -33,6 +33,7 @@ in
         config = {
           confirmation = true;
         };
+        colorTheme = "dark-gray-blue-256";
       };
       zsh = {
         enable = true;
