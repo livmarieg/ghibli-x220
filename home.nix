@@ -70,5 +70,11 @@ in
         defaultCacheTtl = 1800;
       };
     };
+    xsession.windowManager.xmonad = {
+      enable = false;
+      config = {
+      };
+      enableContribAndExtras = true;
+    };
   };
 }
