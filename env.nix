@@ -26,7 +26,6 @@
     #mpvc
     #ranger
     rxvt_unicode
-    taskwarrior
     termite
     zathura
     

@@ -29,7 +29,34 @@
     #pipewire.enable = true;
     #plex.enable = true;
     #prometheus.enable = true;
-    #taskserver.enable = true;
+    #taskserver = {
+    #  confirmation = true;
+    #  debug = true;
+    #  enable = true;
+    #  fqdn = config.networking.hostName;
+    #  group = "taskd";
+    #  ipLog = true;
+    #  listenHost = config.networking.hostName;
+    #  listenPort = 53589;
+    #  organisations = {
+    #    VE = {
+    #      users = [ "cvoges12" ];
+    #    };
+    #  };
+    #  pki.auto = {
+    #    bits = 4096;
+    #    expiration = {
+    #      ca = 365;
+    #      client = 365;
+    #      crl = 365;
+    #      server = 365;
+    #    };
+    #  };
+    #  queueSize = 10;
+    #  requestLimit = 1048576;
+    #  trust = "strict";
+    #  user = "taskd";
+    #};
     #unifi.enable = true;
     redshift = {
       enable = true;

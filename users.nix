@@ -12,7 +12,7 @@
         extraGroups = [
           "wheel" "disk" "audio" "video"
           "networkmanager" "systemd-journal"
-          "libvirtd"
+          "libvirtd" "taskd"
         ];
         shell = pkgs.zsh;
         packages = with pkgs; [

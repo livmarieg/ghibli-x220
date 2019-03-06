@@ -25,6 +25,12 @@ in
         enable = true;
         enableAdobeFlash = false;
       };
+      taskwarrior = {
+        enable = true;
+        config = {
+          confirmation = true;
+        };
+      };
       zsh = {
         enable = true;
         enableAutosuggestions = true;

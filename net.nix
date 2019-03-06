@@ -8,8 +8,8 @@
     firewall = {
       enable = true;
       allowPing = true;
-      allowedTCPPorts = [ 22 53 67 68 80 443 ];
-      allowedUDPPorts = [ 22 53 67 68 80 433 ];
+      allowedTCPPorts = [ 22 53 67 68 80 443 53589 ];
+      allowedUDPPorts = [ 22 53 67 68 80 433 53589 ];
       checkReversePath = true;
       logRefusedConnections = true;
       logRefusedUnicastsOnly = true;
