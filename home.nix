@@ -35,6 +35,19 @@ in
         };
         colorTheme = "dark-gray-blue-256";
       };
+      urxvt = {
+        enable = true;
+        iso14755 = true;
+        scroll = {
+          bar.enable = false;
+          keepPosition = true;
+          lines = 10000;
+          scrollOnKeystroke = true;
+          scrollOnOutput = false;
+        };
+        shading = 100;
+        transparent = false;
+      };
       zsh = {
         enable = true;
         enableAutosuggestions = true;
