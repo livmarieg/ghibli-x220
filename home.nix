@@ -72,8 +72,15 @@ in
     };
     xsession.windowManager.xmonad = {
       enable = false;
-      config = {
-      };
+      config = 
+        pkgs.writeText "xmonad.hs" ''
+          import XMonad                      
+          main = xmonad defaultConfig        
+              { terminal    = "urxvt"        
+              , modMask     = mod4Mask       
+              , borderWidth = 3              
+              }
+        '';                                   
       enableContribAndExtras = true;
     };
   };
