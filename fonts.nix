@@ -22,6 +22,7 @@
       fira-mono
       font-droid
       font-awesome_5
+      font-awesome_4
     ];
   };
 }
