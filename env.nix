@@ -28,6 +28,7 @@
       khal
       khard
       #mpvc
+      #polybar
       #ranger
       rxvt_unicode
       termite
