@@ -89,16 +89,6 @@
           enable = true;
           package = pkgs.i3-gaps;
         };
-        xmonad = {
-          enable = true;
-          enableContribAndExtras = true;
-          extraPackages = haskellPackages: [
-            haskellPackages.xmonad-contrib
-            haskellPackages.xmonad-extras
-            haskellPackages.xmonad
-            haskellPackages.monad-logger
-          ];
-        };
         default = "i3";
       };
       desktopManager.xterm.enable = false;
