@@ -112,7 +112,16 @@ in
             height = "3%";
             radius = 0;
             modules-left = "i3";
-            modules-right = "date";
+            modules-center = "date";
+            modules-right = "fs wired wifi light kb ram cpu battery temp power";
+            module-margin-left = 1;
+            module-margin-right = 2;
+          };
+
+          "module/i3" = {
+            type = "internal/i3";
+            scroll-up = "i3wm-wmnext";
+            scroll-down = "i3wm-wmprev";
           };
 
           "module/date" = {
@@ -123,10 +132,119 @@ in
             label = "%date% %time%";
           };
 
-          "module/i3" = {
-            type = "internal/i3";
-            scroll-up = "i3wm-wmnext";
-            scroll-down = "i3wm-wmprev";
+          "module/wired" = {
+            type = "internal/network";
+            interface = "enp0s25";
+            interval = 5;
+          };
+
+          "module/wifi" = {
+            type = "internal/network";
+            interface = "wlp3s0";
+            interval = 5;
+          };
+
+          "module/kb" = {
+            type = "internal/xkeyboard";
+            blacklist-0 = "num lock";
+          };
+
+          "module/fs" = {
+            type = "internal/fs";
+            interval = 30;
+            mount-0 = "/";
+            fixed-values = true;
+            spacing = 2;
+            label-mounted = "%mountpoint%: %percentage_free%%";
+            label-unmounted = "%mountpoint%: not mounted";
+          };
+
+          "module/light" = {
+            type = "internal/xbacklight";
+            format = "<label> <bar>";
+            label = "BL";
+            bar-width = 10;
+            bar-indicator = "|";
+            bar-indicator-foreground = "#ff";
+            bar-indicator-font = 2;
+            bar-fill = "-";
+            bar-fill-font = 2;
+            bar-fill-foreground = "#9f78e1";
+            bar-empty = "_";
+            bar-empty-font = 2;
+            bar-empty-foreground = "555";
+          };
+
+          "module/volume" = {
+            type = "internal/pulseaudio";
+            sink = "alsa_output.pci-0000_00_1b.0.analog-stereo";
+            use-ui-max = "true";
+            interval = 5;
+            format-volume = "<ramp-volume> <label-volume>";
+            format-muted = "<label-muted>";
+            label-volume = "volume %percentage%%";
+            label-volume-foreground = "#ff";
+            label-muted = " muted";
+            label-muted-foreground = "#66";
+            ramp-volume-0 = "";
+            ramp-volume-1 = "";
+            ramp-volume-2 = "";
+            master-soundcard = "default";
+            speaker-soundcard = "default";
+            headphone-soundcard = "default";
+            master-mixer = "Master";
+            speaker-mixer = "Speaker";
+            headphone-mixer = "Headphone";
+          };
+
+          "module/alsa" = {
+            type = "internal/alsa";
+            master-soundcard = "default";
+            speaker-soundcard = "default";
+            headphone-soundcard = "default";
+            master-mixer = "Master";
+            speaker-mixer = "Speaker";
+            headphone-mixer = "Headphone";
+            headphone-id = 9;
+            mapped = true;
+            interval = 5;
+            format-volume = "<ramp-volume> <label-volume>";
+            label-volume = "volume %percentage%%";
+            label-volume-foreground = "#ff";
+            label-muted = " muted";
+            label-muted-foreground = "#66";
+            ramp-volume-0 = "";
+            ramp-volume-1 = "";
+            ramp-volume-2 = "";
+          };
+
+          "module/ram" = {
+            type = "internal/memory";
+            interval = 3;
+          };
+
+          "module/cpu" = {
+            type = "internal/cpu";
+            interval = 3;
+          };
+
+          "module/battery" = {
+            type = "internal/battery";
+            full-at = 99;
+            battery = "BAT0";
+            adapter = "AC";
+            poll-interval = 5;
+          };
+
+          "module/temp" = {
+            type = "internal/temperature";
+            interval = 3;
+            thermal-zone = 0;
+            hwmon-path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input";
+          };
+
+          "module/power" = {
+            
           };
         };
         script = ''
