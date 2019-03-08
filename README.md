@@ -35,12 +35,6 @@ ToDo
   - variable pkg selection
   - variable LVM volumes
   - variable swap/memory
-* xmonad
-  - colemak bindings
-  - xmobar
-  - general bindings
-* ~~home-manager~~
-  - port configs
 * vim
   - make each part into a plugin
   - rewrite plugins in haskell
