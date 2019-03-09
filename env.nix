@@ -10,11 +10,11 @@
       # Applications
       ## Audio
       #cava
-      #mopidy
-      #mopidy-gmusic
-      #mopidy-soundcloud
-      #mopidy-spotify
-      #ncmpcpp
+      mopidy
+      mopidy-gmusic
+      mopidy-soundcloud
+      mopidy-spotify
+      ncmpcpp
 
       ## Editors
       vim
@@ -27,7 +27,7 @@
       dmenu
       khal
       khard
-      #mpvc
+      mpvc
       #ranger
       rxvt_unicode
       zathura
@@ -67,7 +67,7 @@
       git
 
       ## Video
-      #mpv
+      mpv
 
       ## Window-Manager
       i3-gaps
@@ -131,7 +131,6 @@
 
       # Servers
       #clamsmtp
-      #mpd
       #quagga
 
       # Tools

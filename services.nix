@@ -10,6 +10,9 @@
       enable = true;
       allowSFTP = true;
     };
+    mpd = {
+      enable = true;
+    };
     printing.enable = true;
     fprintd.enable = true;
     #firefox.syncserver.enable = true;
