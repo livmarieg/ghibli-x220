@@ -24,11 +24,8 @@ in
 
 {
   home-manager.users.cvoges12 = {
-    home = {
-      #packages = with pkgs; [ polybar ];
-      sessionVariables = {
-        EDITOR = "nvim";
-      };
+    home.sessionVariables = {
+      EDITOR = "nvim";
     };
     programs = {
       git = {
@@ -106,16 +103,31 @@ in
           githubSupport = true;
         };
         config = {
+          "colors" = {
+            background = "\${xrdb:color0:#222}";
+            foreground = "\${xrdb:color7:#222}";
+            foreground-alt = "\${xrdb:color7:#222}";
+            primary = "\${xrdb:color1:#222}";
+            secondary = "\${xrdb:color2:#222}";
+            alert = "\${xrdb:color3:#222}";
+          };
           "bar/top" = {
             monitor = "LVDS1";
             width = "100%";
             height = "3%";
             radius = 0;
-            modules-left = "i3";
-            modules-center = "date";
-            modules-right = "fs wired wifi light kb ram cpu battery temp power";
+
+            background = "\${colors.background}";
+            foreground = "\${colors.foreground}";
+
+            modules-left = "i3 mpd";
+            modules-right = "light cpu memory fs temp battery wired wifi date";
             module-margin-left = 1;
             module-margin-right = 2;
+
+            font-0 = "Fira Mono:pixelsize=10;0";
+            font-1 = "FontAwesome5Free:pixelsize=10;3";
+            font-2 = "FontAwesome5Free:style=Solid:pixelsize=10;3";
           };
 
           "module/i3" = {
@@ -126,9 +138,9 @@ in
 
           "module/date" = {
             type = "internal/date";
-            internal = 5;
-            date = "%d-%m-%y";
-            time = "%H:%M";
+            internal = 1;
+            date = "%y-%m-%d";
+            time = "%H:%M:%S";
             label = "%date% %time%";
           };
 
@@ -142,6 +154,7 @@ in
             type = "internal/network";
             interface = "wlp3s0";
             interval = 5;
+            label-connected = " %local_ip%";
           };
 
           "module/kb" = {
@@ -151,18 +164,18 @@ in
 
           "module/fs" = {
             type = "internal/fs";
-            interval = 30;
+            interval = 5;
             mount-0 = "/";
             fixed-values = true;
             spacing = 2;
-            label-mounted = "%mountpoint%: %percentage_free%%";
-            label-unmounted = "%mountpoint%: not mounted";
+            label-mounted = " %free%";
+            label-unmounted = " not mounted";
           };
 
           "module/light" = {
             type = "internal/xbacklight";
-            format = "<label> <bar>";
-            label = "BL";
+            format = "<label>";
+            label = " %percentage%%";
             bar-width = 10;
             bar-indicator = "|";
             bar-indicator-foreground = "#ff";
@@ -175,76 +188,89 @@ in
             bar-empty-foreground = "555";
           };
 
-          "module/volume" = {
-            type = "internal/pulseaudio";
-            sink = "alsa_output.pci-0000_00_1b.0.analog-stereo";
-            use-ui-max = "true";
-            interval = 5;
-            format-volume = "<ramp-volume> <label-volume>";
-            format-muted = "<label-muted>";
-            label-volume = "volume %percentage%%";
-            label-volume-foreground = "#ff";
-            label-muted = " muted";
-            label-muted-foreground = "#66";
-            ramp-volume-0 = "";
-            ramp-volume-1 = "";
-            ramp-volume-2 = "";
-            master-soundcard = "default";
-            speaker-soundcard = "default";
-            headphone-soundcard = "default";
-            master-mixer = "Master";
-            speaker-mixer = "Speaker";
-            headphone-mixer = "Headphone";
-          };
+          #"module/volume" = {
+          #  type = "internal/pulseaudio";
+          #  sink = "alsa_output.pci-0000_00_1b.0.analog-stereo";
+          #  use-ui-max = "true";
+          #  interval = 5;
+          #  format-volume = "<ramp-volume> <label-volume>";
+          #  format-muted = "<label-muted>";
+          #  label-volume = "volume %percentage%%";
+          #  label-volume-foreground = "#ff";
+          #  label-muted = " muted";
+          #  label-muted-foreground = "#66";
+          #  ramp-volume-0 = "";
+          #  ramp-volume-1 = "";
+          #  ramp-volume-2 = "";
+          #  master-soundcard = "default";
+          #  speaker-soundcard = "default";
+          #  headphone-soundcard = "default";
+          #  master-mixer = "Master";
+          #  speaker-mixer = "Speaker";
+          #  headphone-mixer = "Headphone";
+          #};
 
-          "module/alsa" = {
-            type = "internal/alsa";
-            master-soundcard = "default";
-            speaker-soundcard = "default";
-            headphone-soundcard = "default";
-            master-mixer = "Master";
-            speaker-mixer = "Speaker";
-            headphone-mixer = "Headphone";
-            headphone-id = 9;
-            mapped = true;
-            interval = 5;
-            format-volume = "<ramp-volume> <label-volume>";
-            label-volume = "volume %percentage%%";
-            label-volume-foreground = "#ff";
-            label-muted = " muted";
-            label-muted-foreground = "#66";
-            ramp-volume-0 = "";
-            ramp-volume-1 = "";
-            ramp-volume-2 = "";
-          };
+          #"module/alsa" = {
+          #  type = "internal/alsa";
+          #  master-soundcard = "default";
+          #  speaker-soundcard = "default";
+          #  headphone-soundcard = "default";
+          #  master-mixer = "Master";
+          #  speaker-mixer = "Speaker";
+          #  headphone-mixer = "Headphone";
+          #  headphone-id = 9;
+          #  mapped = true;
+          #  interval = 5;
+          #  format-volume = "<ramp-volume> <label-volume>";
+          #  label-volume = "volume %percentage%%";
+          #  label-volume-foreground = "#ff";
+          #  label-muted = " muted";
+          #  label-muted-foreground = "#66";
+          #  ramp-volume-0 = "";
+          #  ramp-volume-1 = "";
+          #  ramp-volume-2 = "";
+          #};
 
-          "module/ram" = {
+          "module/memory" = {
             type = "internal/memory";
-            interval = 3;
+            interval = 5;
+            format = "<label>";
+            label = " %percentage_used%%";
           };
 
           "module/cpu" = {
             type = "internal/cpu";
-            interval = 3;
+            interval = 5;
+            format = "<label>";
+            label = " %percentage%%";
           };
 
           "module/battery" = {
             type = "internal/battery";
+            label = "Bat %percentage%%";
             full-at = 99;
             battery = "BAT0";
             adapter = "AC";
             poll-interval = 5;
+            format-charging = "<label-charging>";
+            format-discharging = "<label-discharging>";
+            label-charging = " %percentage%%";
+            label-discharging = " %percentage%%";
           };
 
           "module/temp" = {
             type = "internal/temperature";
-            interval = 3;
+            interval = 5;
             thermal-zone = 0;
             hwmon-path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input";
           };
 
-          "module/power" = {
-            
+          "module/mpd" = {
+            type = "internal/mpd";
+            host = "127.0.0.1";
+            port = 6600;
+            password = "password";
+            interval = 5;
           };
         };
         script = ''
