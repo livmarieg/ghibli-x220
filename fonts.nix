@@ -23,6 +23,7 @@
       font-droid
       font-awesome_5
       font-awesome_4
+      wqy_zenhei
     ];
   };
 }

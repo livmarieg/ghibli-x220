@@ -126,14 +126,46 @@ in
             module-margin-right = 2;
 
             font-0 = "Fira Mono:pixelsize=10;0";
-            font-1 = "FontAwesome5Free:pixelsize=10;3";
-            font-2 = "FontAwesome5Free:style=Solid:pixelsize=10;3";
+            font-1 = "FontAwesome5Free:pixelsize=10;0";
+            font-2 = "FontAwesome5Free:style=Solid:pixelsize=10;0";
+            font-3 = "WenQuanYi Zen Hei:pixelsize=10;0";
           };
 
           "module/i3" = {
             type = "internal/i3";
             scroll-up = "i3wm-wmnext";
             scroll-down = "i3wm-wmprev";
+
+            ws-icon-0 = "0;零";
+            ws-icon-1 = "1;一";
+            ws-icon-2 = "2;二";
+            ws-icon-3 = "3;三";
+            ws-icon-4 = "4;四";
+            ws-icon-5 = "5;五";
+            ws-icon-6 = "6;六";
+            ws-icon-7 = "7;七";
+            ws-icon-8 = "8;八";
+            ws-icon-9 = "9;九";
+            ws-icon-10 = "10;十";
+
+            format = "<label-state> <label-mode>";
+            label-mode = "%mode%";
+
+            label-focused = "%icon%";
+            label-focused-font = "3";
+            label-focused-padding = 1;
+
+            label-unfocused = "%icon%";
+            label-unfocused-font = "4";
+            label-unfocused-padding = 1;
+
+            label-visible = "%icon%";
+            label-visible-font = "4";
+            label-visible-padding = 1;
+
+            label-urgent = "%icon%";
+            label-urgent-font = "4";
+            label-urgent-padding = 1;
           };
 
           "module/date" = {
@@ -141,7 +173,7 @@ in
             internal = 1;
             date = "%y-%m-%d";
             time = "%H:%M:%S";
-            label = "%date% %time%";
+            label = " %date%  %time%";
           };
 
           "module/wired" = {
