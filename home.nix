@@ -110,19 +110,49 @@ in
             secondary = "\${xrdb:color2:#222}";
             alert = "\${xrdb:color3:#222}";
           };
+
           "bar/top" = {
             monitor = "LVDS1";
+            monitor-strict = true;
             width = "100%";
             height = "3%";
             radius = 0;
+            bottom = false;
 
             background = "\${colors.background}";
             foreground = "\${colors.foreground}";
 
-            modules-left = "i3 mpd";
-            modules-right = "light cpu memory fs temp battery wired wifi date";
-            module-margin-left = 1;
+            fixed-center = true;
+            modules-left = "i3";
+            modules-right = "wired wifi fs temp battery";
+            module-margin-left = 2;
             module-margin-right = 2;
+            padding = 2;
+
+            font-0 = "Fira Mono:pixelsize=10;0";
+            font-1 = "FontAwesome5Free:pixelsize=10;0";
+            font-2 = "FontAwesome5Free:style=Solid:pixelsize=10;0";
+            font-3 = "WenQuanYi Zen Hei:pixelsize=10;0";
+          };
+
+          "bar/bottom" = {
+            monitor = "LVDS1";
+            monitor-strict = true;
+            width = "100%";
+            height = "3%";
+            radius = 0;
+            bottom = true;
+
+            background = "\${colors.background}";
+            foreground = "\${colors.foreground}";
+
+            fixed-center = true;
+            modules-left = "cpu memory";
+            modules-center = "mpd";
+            modules-right = "light date";
+            module-margin-left = 2;
+            module-margin-right = 2;
+            padding = 2;
 
             font-0 = "Fira Mono:pixelsize=10;0";
             font-1 = "FontAwesome5Free:pixelsize=10;0";
@@ -306,6 +336,7 @@ in
         };
         script = ''
           polybar top &
+          polybar bottom &
         '';
       };
     };
