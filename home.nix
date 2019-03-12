@@ -4,7 +4,6 @@ let
   name = "Clayton Voges";
   gmail = "vogesclayton@gmail.com";
   username = "cvoges12";
-  dots = "/home/cvoges12/dots";
   scripts = "/home/cvoges12/scripts";
   maildir = "/home/cvoges12/Mail";
   mod = "Mod4";
