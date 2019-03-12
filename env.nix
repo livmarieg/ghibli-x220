@@ -161,13 +161,14 @@
       #clamav
       gnupg
       #john
-      kpcli
       #metasploit
       #nmap
+      pass
       #thc-hydra
 
       ## System
       htop
+      ps_mem
       tree
 
       # X11

@@ -3,6 +3,7 @@
 {
   programs = {
     bash.enableCompletion = false;
+    browserpass.enable = true;
     command-not-found.enable = true;
     mtr.enable = true;
     gnupg.agent = {
