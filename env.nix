@@ -145,10 +145,9 @@
 
       ## Misc
       neofetch
-      #screen
       tmpwatch
       vdirsyncer # for khal and khard
-      #youtube-dl
+      youtube-dl
 
       ## Networking
       #aircrack-ng
