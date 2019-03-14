@@ -29,15 +29,89 @@ ToDo
 * install script
   - dialog interface
   - variable users
-  - variable physical disks
   - variable hardware generation
-  - variable cpu cores
+    - variable physical disks
+    - variable LVM volumes
+    - variable cpu cores
+    - variable swap/memory
   - variable pkg selection
-  - variable LVM volumes
-  - variable swap/memory
 * vim
   - make each part into a plugin
   - rewrite plugins in haskell
+* international support
+  - pinyin
+  - kanji
+  - hiragana
+  - katakana
+* polybar
+  - volume (sound)
+  - mpd
+
+Manuals
+-------
+apparmor
+auditd
+bluetooth
+browserpass
+cava
+clang
+cron
+dmenu
+feh
+fcitx
+firefox
+gcc
+ghc
+git
+gpg
+htop
+i3wm
+ibus
+idris
+idris-vim
+khal
+khard
+llvm
+mailsync
+mopidy
+mpd
+mpv
+neovim
+neomutt
+newsboat
+networkmanager
+nixOS
+notmuch
+ohmyzsh
+opengl
+openjdk
+openssh
+pass
+polybar
+polkit
+powertop
+profanity
+pulseaudio
+quagga
+quanternion
+redshift
+riot
+rsync
+signal
+snort
+syntactic
+systemd
+taskwarrior
+telegram
+tmux
+urxvt
+vim
+weechat
+wireguard
+wireshark
+youcompleteme
+zathura
+zsh
   
 Curling
 ---------
