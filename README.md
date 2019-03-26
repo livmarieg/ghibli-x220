@@ -11,41 +11,6 @@ Features
 * Hardware Automation
 * Package Automation
 * Misc Config Automation
-
-ToDo
-----
-* wireguard
-* ssh
-  - public/private key authentication
-  - remove password authentication
-* quagga
-  - ospf
-    * v2
-    * v3
-  - bgp
-* taskwarrior
-* rsync
-* libvirtd
-* install script
-  - dialog interface
-  - variable users
-  - variable hardware generation
-    - variable physical disks
-    - variable LVM volumes
-    - variable cpu cores
-    - variable swap/memory
-  - variable pkg selection
-* vim
-  - make each part into a plugin
-  - rewrite plugins in haskell
-* international support
-  - pinyin
-  - kanji
-  - hiragana
-  - katakana
-* polybar
-  - volume (sound)
-  - mpd
   
 Curling
 ---------
