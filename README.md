@@ -1,6 +1,6 @@
 Annet x220
 ==========
-**System configuration for nixOS on the x220**
+**System configuration for [NixOS](https://nixos.org/) on the ThinkPad x220**
 
 Features
 --------
@@ -12,8 +12,8 @@ Features
 * Package Automation
 * Misc Config Automation
   
-Curling
----------
+Curling (needs to be updated)
+-----------------------------
 Not all builds will be made from nixOS or a system with the nix package manager. This includes builds that are new installs and deployments that do not contain the git package. Consequently, these modules must be curled for installation. So far, I do not own a private and sufficiently secure domain. In the meantime, I will curl each module to https://0x0.st and will list the links for each below:
 * boot.nix - https://0x0.st/zoEP.nix
 * configuration.nix - https://0x0.st/zoEZ.nix
