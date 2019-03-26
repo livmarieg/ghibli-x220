@@ -27,7 +27,7 @@ ToDo
 * rsync
 * libvirtd
 * install script
-  - dialog interface
+  - gui interface
   - variable users
   - variable physical disks
   - variable hardware generation
