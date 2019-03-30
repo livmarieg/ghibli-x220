@@ -2,7 +2,6 @@
 
 {
   hardware = {
-    enableRedistributableFirmware = true;
     bluetooth = {
       enable = false;
       #package = pkgs.blue;
