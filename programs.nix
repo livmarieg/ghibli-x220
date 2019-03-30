@@ -4,12 +4,7 @@
   programs = {
     bash.enableCompletion = false;
     browserpass.enable = true;
-    command-not-found.enable = true;
     mtr.enable = true;
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
     tmux = {
       enable = true;
       secureSocket = true;

@@ -1,6 +1,6 @@
 Annet x220
 ==========
-**System configuration for nixOS on the x220**
+**System configuration for [NixOS](https://nixos.org/) on the ThinkPad x220**
 
 Features
 --------
