@@ -4,24 +4,34 @@
   imports = [ 
     <nixos-hardware/lenovo/thinkpad/x220>
     ./boot.nix
+    ./common/boot.nix
+    ./common/environment.nix
+    ./common/hardware.nix
+    ./common/i18n.nix
+    ./common/networking.nix
+    ./common/nix.nix
+    ./common/nixpkgs.nix
+    ./common/powerManagement.nix
+    ./common/programs.nix
+    ./common/security.nix
+    ./common/services.nix
+    ./common/system.nix
+    ./common/users.nix
     ./docs.nix
-    ./env.nix
+    ./environment.nix
     ./fonts.nix
-    ./fs.nix
+    ./fileSystems.nix
+    ./hardware.nix
     ./home.nix
-    ./hw.nix 
     ./i18n.nix
-    ./net.nix
+    ./networking.nix
     ./nix.nix
-    ./nixpkgs.nix
-    ./power.nix
     ./programs.nix
     ./security.nix
     ./services.nix
     ./sound.nix
-    ./swap.nix
+    ./swapDevices.nix
     ./systemd.nix
-    ./system.nix
     ./time.nix
     ./users.nix
     ./xdg.nix
