@@ -14,6 +14,7 @@
       defaultFonts = {
         monospace = ["Fira Mono"];
         sansSerif = ["Fira Sans"];
+        serif = ["DejaVu Serif"];
       };
       ultimate.enable = true;
     };
