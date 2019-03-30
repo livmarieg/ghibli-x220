@@ -1,6 +1,6 @@
 Annet x220
 ==========
-**System configuration for nixOS on the x220**
+**System configuration for [NixOS](https://nixos.org/) on the ThinkPad x220**
 
 Features
 --------
@@ -11,36 +11,9 @@ Features
 * Hardware Automation
 * Package Automation
 * Misc Config Automation
-
-ToDo
-----
-* wireguard
-* ssh
-  - public/private key authentication
-  - remove password authentication
-* quagga
-  - ospf
-    * v2
-    * v3
-  - bgp
-* taskwarrior
-* rsync
-* libvirtd
-* install script
-  - dialog interface
-  - variable users
-  - variable physical disks
-  - variable hardware generation
-  - variable cpu cores
-  - variable pkg selection
-  - variable LVM volumes
-  - variable swap/memory
-* vim
-  - make each part into a plugin
-  - rewrite plugins in haskell
   
-Curling
----------
+Curling (needs to be updated)
+-----------------------------
 Not all builds will be made from nixOS or a system with the nix package manager. This includes builds that are new installs and deployments that do not contain the git package. Consequently, these modules must be curled for installation. So far, I do not own a private and sufficiently secure domain. In the meantime, I will curl each module to https://0x0.st and will list the links for each below:
 * boot.nix - https://0x0.st/zoEP.nix
 * configuration.nix - https://0x0.st/zoEZ.nix

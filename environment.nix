@@ -62,10 +62,6 @@
       ### Sniffers
       #wireshark
 
-      ## Version-Management
-      ### Git-and-Tools
-      git
-
       ## Video
       mpv
 
@@ -145,7 +141,6 @@
 
       ## Misc
       neofetch
-      tmpwatch
       vdirsyncer # for khal and khard
       youtube-dl
 
@@ -153,13 +148,11 @@
       #aircrack-ng
       #offlineimap
       #traceroute
-      wireguard-tools
       #wget
       #whois
       
       ## Security
       #clamav
-      gnupg
       #john
       #metasploit
       #nmap

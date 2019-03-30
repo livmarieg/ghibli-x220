@@ -2,8 +2,7 @@
 
 {
   i18n = {
-    consoleFont = "Lat2-Terminus16";
+    consoleFont = "Fira Mono";
     consoleUseXkbConfig = true;
-    defaultLocale = "en_US.UTF-8";
   };
 }
