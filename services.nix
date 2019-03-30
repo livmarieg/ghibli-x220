@@ -6,10 +6,6 @@
     #apache-kafka.enable = true;
     #apcupsd.enable = true;
     #arbtt.enable = true;
-    openssh = {
-      enable = true;
-      allowSFTP = true;
-    };
     printing.enable = true;
     fprintd.enable = true;
     #firefox.syncserver.enable = true;
@@ -93,16 +89,9 @@
       };
       desktopManager.xterm.enable = false;
     };
-    cron = {
-      enable = true;
-      systemCronJobs = [
-        "0 0 1 * *     root     tmpwatch -maf 240 /tmp"
-      ];
-    };
     udev.packages = with pkgs; [
       android-udev-rules
     ];
     nixosManual.showManual = true;
-    upower.enable = true;
   };
 }
