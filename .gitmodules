@@ -1,0 +1,3 @@
+[submodule "annet-common"]
+	path = common
+	url = https://github.com/cvoges12/annet-common
