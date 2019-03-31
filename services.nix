@@ -71,7 +71,7 @@
       enable = true;
       autorun = true;
       layout = "us";
-      xkbVariant = "colemak";
+      xkbVariant = "qwerty";
       startDbusSession = true;
       terminateOnReset = true;
       libinput = {
