@@ -3,10 +3,10 @@
 {
   users = {
     extraUsers = {
-      cvoges12 = {
-        description = "Clayton Voges";
+      livmarieg = {
+        description = "Olivia Gailey";
         createHome = true;
-        home = "/home/cvoges12";
+        home = "/home/livmarieg";
         isNormalUser = true;
         uid = 1000;
         extraGroups = [
