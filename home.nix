@@ -3,11 +3,11 @@
 {
   home-manager.users = 
     let
-      name = "Clayton Voges";
-      gmail = "vogesclayton@gmail.com";
-      username = "cvoges12";
-      maildir = "/home/cvoges12/Mail";
-      musicdir = "/home/cvoges12/Music";
+      name = "Olivia Gailey";
+      gmail = "olivia.gailey13@gmail.com";
+      username = "livmarieg";
+      maildir = "/home/livmarieg/Mail";
+      musicdir = "/home/livmarieg/Music";
       mod = "Mod4";
       ws0 = "workspace 0";
       ws1 = "workspace 1";
@@ -21,7 +21,7 @@
       ws9 = "workspace 9";
       ws10 = "workspace 10";
     in
-    { cvoges12 = {
+    { livmarieg = {
       home.sessionVariables = {
         EDITOR = "nvim";
       };
@@ -368,7 +368,7 @@
           keybindings = {
             "${mod}+Shift+q" = "exec i3-msg exit";
             "${mod}+Shift+r" = "restart";
-            "${mod}+Shift+l" = "exec i3lock";
+            "${mod}+Shift+i" = "exec i3lock";
 
             "${mod}+d" = "exec --no-startup-id dmenu_run";
             "${mod}+Return" = "exec urxvt";
@@ -389,25 +389,15 @@
             "${mod}+p" = "focus parent";
             "${mod}+c" = "focus child";
 
-            # Colemak
-            "${mod}+h" = "focus left";
-            "${mod}+n" = "focus down";
-            "${mod}+e" = "focus up";
-            "${mod}+i" = "focus right";
-            "${mod}+Shift+h" = "move left";
-            "${mod}+Shift+n" = "move down";
-            "${mod}+Shift+e" = "move up";
-            "${mod}+Shift+i" = "move right";
-
             # Qwerty
-            #"${mod}+h" = "focus left";
-            #"${mod}+j" = "focus down";
-            #"${mod}+k" = "focus up";
-            #"${mod}+l" = "focus right";
-            #"${mod}+Shift+h" = "move left";
-            #"${mod}+Shift+j" = "move down";
-            #"${mod}+Shift+k" = "move up";
-            #"${mod}+Shift+l" = "move right";
+            "${mod}+h" = "focus left";
+            "${mod}+j" = "focus down";
+            "${mod}+k" = "focus up";
+            "${mod}+l" = "focus right";
+            "${mod}+Shift+h" = "move left";
+            "${mod}+Shift+j" = "move down";
+            "${mod}+Shift+k" = "move up";
+            "${mod}+Shift+l" = "move right";
 
             # Workspaces
             "${mod}+grave" = "${ws0}";
@@ -445,17 +435,11 @@
           };
           modes = {
             resize = {
-              # Colemak
-              "h" = "resize grow width 10 px or 10 ppt";
-              "n" = "resize shrink height 10 px or 10 ppt";
-              "e" = "resize grow height 10 px or 10 ppt";
-              "i" = "resize shrink width 10 px or 10 ppt";
-
               # Qwerty
-              #"h" = "resize grow width 10 px or 10 ppt";
-              #"j" = "resize shrink height 10 px or 10 ppt";
-              #"k" = "resize grow height 10 px or 10 ppt";
-              #"l" = "resize shrink width 10 px or 10 ppt";
+              "h" = "resize grow width 10 px or 10 ppt";
+              "j" = "resize shrink height 10 px or 10 ppt";
+              "k" = "resize grow height 10 px or 10 ppt";
+              "l" = "resize shrink width 10 px or 10 ppt";
 
               "Escape" = "mode default";
             };
