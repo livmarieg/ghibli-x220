@@ -61,7 +61,7 @@ curlConfig(){
   curl https://0x0.st/zPa7.nix > common/i18n.nix
   curl https://0x0.st/zPah.nix > common/networking.nix
   curl https://0x0.st/zPBr.nix > common/nix.nix
-  curl https://0x0.st/zoE1.nix > common/nipkgs.nix
+  curl https://0x0.st/zoE1.nix > common/nixpkgs.nix
   curl https://0x0.st/zoEk.nix > common/powerManagement.nix
   curl https://0x0.st/zPBz.nix > common/programs.nix
   curl https://0x0.st/zPBi.nix > common/security.nix
