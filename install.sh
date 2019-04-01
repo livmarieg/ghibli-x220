@@ -30,6 +30,7 @@ lvmSetup(){
   lvcreate -n root vg -l 100%FREE
 }
 curlConfig(){
+  mkdir /mnt/etc
   mkdir /mnt/etc/nixos
   cd /mnt/etc/nixos
   curl https://0x0.st/zPQi.nix > boot.nix
