@@ -15,7 +15,7 @@ Features
 Install
 -------
 ```
-curl https://0x0.st/zPJk.sh > install.sh
+curl https://0x0.st/zPJF.sh > install.sh
 chmod +x install.sh
 bash install.sh
 ```
