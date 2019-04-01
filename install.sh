@@ -10,7 +10,7 @@ formatDisk(){
   parted $disk --script mklabel $table
   sgdisk -og $disk
   sgdisk -n 1:0:500M -c 1:"EFI" -t 1:ef00 -g $disk
-  sgdisk -n 2:0:0 -c 3:"LVM" -t 2:8301 -g $disk
+  sgdisk -n 2:0:0 -c 2:"LVM" -t 2:8301 -g $disk
 }
 fsSetup(){
   mkfs.vfat -n EFI /dev/sda1
