@@ -43,7 +43,7 @@ curlConfig(){
   curl https://0x0.st/zPQX.nix > home.nix
   curl https://0x0.st/zPaY.nix > i18n.nix
   curl https://0x0.st/zPag.nix > networking.nix
-  curl https://0x0.st/zPaE.nix > nix.nix
+  curl https://0x0.st/zPgq.nix > nix.nix
   curl https://0x0.st/zPQ8.nix > nvim.nix
   curl https://0x0.st/zPal.nix > programs.nix
   curl https://0x0.st/zPa0.nix > security.nix
