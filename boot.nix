@@ -8,7 +8,7 @@
       luks = {
         devices = [
           { name = "root";
-            device = "/dev/disk/by-uuid/4bab2d22-1c1d-4c7a-8193-b8e12f542dce";
+            device = "/dev/disk/by-uuid/4316eab2-497d-4b64-ae1d-c512b13d48e2";
             preLVM = true;}
         ];
       };
