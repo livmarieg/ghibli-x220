@@ -33,7 +33,7 @@ curlConfig(){
   mkdir /mnt/etc
   mkdir /mnt/etc/nixos
   cd /mnt/etc/nixos
-  curl https://0x0.st/zPQi.nix > boot.nix
+  curl https://0x0.st/zPYs.nix > boot.nix
   curl https://0x0.st/zPa4.nix > configuration.nix
   curl https://0x0.st/zoEN.nix > docs.nix
   curl https://0x0.st/zPQo.nix > environment.nix
@@ -47,7 +47,7 @@ curlConfig(){
   curl https://0x0.st/zPQ8.nix > nvim.nix
   curl https://0x0.st/zPal.nix > programs.nix
   curl https://0x0.st/zPa0.nix > security.nix
-  curl https://0x0.st/zPQP.nix > services.nix
+  curl https://0x0.st/zPYo.nix > services.nix
   curl https://0x0.st/zoEh.nix > sound.nix
   curl https://0x0.st/zPQZ.nix > swapDevices.nix
   curl https://0x0.st/zo6r.nix > systemd.nix
