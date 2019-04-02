@@ -71,7 +71,7 @@
       enable = true;
       autorun = true;
       layout = "us";
-      xkbVariant = "qwerty";
+      xkbVariant = "";
       startDbusSession = true;
       terminateOnReset = true;
       libinput = {
