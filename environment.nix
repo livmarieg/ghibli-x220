@@ -10,10 +10,7 @@
       # Applications
       ## Audio
       #cava
-      mopidy
-      mopidy-gmusic
-      mopidy-soundcloud
-      mopidy-spotify
+      caudec
       ncmpcpp
 
       ## Editors
@@ -35,7 +32,7 @@
       ## Networking
       ### Browsers
       firefox
-      #w3m
+      surf
 
       ### Feedreaders
       #newsboat
@@ -48,7 +45,7 @@
       #quaternion
       #riot-web
       #signal-desktop
-      #tdesktop
+      tdesktop
       #telegram-cli
       
       ### IRC
@@ -85,8 +82,6 @@
       # Development
       ## Compilers
       ghc
-      #haskell.packages.ghc822.ghc    # collision. create devenv? or find way to compile djinn
-      #haskell.packages.ghc822    # not a package
       #llvm
       openjdk
 
@@ -135,6 +130,9 @@
       unzip
       zip
 
+      ## Filesystems
+      android-file-transfer
+
       ## Graphics
       pywal
       scrot    # OR escrotum OR maim OR yaxg
@@ -161,6 +159,7 @@
 
       ## System
       htop
+      lshw
       ps_mem
       tree
 
